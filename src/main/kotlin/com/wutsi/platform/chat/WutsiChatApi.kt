@@ -9,7 +9,7 @@ import com.wutsi.platform.chat.dto.SendMessageResponse
 import feign.Headers
 import feign.RequestLine
 
-public interface WutsiVhatApi {
+public interface WutsiChatApi {
   @RequestLine("POST /v1/messages")
   @Headers(value=["Content-Type: application/json"])
   public fun sendMessage(request: SendMessageRequest): SendMessageResponse

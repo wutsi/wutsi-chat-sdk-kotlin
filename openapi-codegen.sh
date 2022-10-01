@@ -2,7 +2,7 @@
 
 CODEGEN_JAR=~/wutsi-codegen/wutsi-codegen.jar
 
-API_NAME=wutsi-vhat
+API_NAME=wutsi-chat
 API_URL=https://raw.githubusercontent.com/wutsi/wutsi-openapi/master/src/openapi/chat/v1/chat_api.yaml
 GITHUB_USER=wutsi
 

@@ -6,12 +6,12 @@
 
   <modelVersion>4.0.0</modelVersion>
 
-  <artifactId>wutsi-vhat-sdk-kotlin</artifactId>
+  <artifactId>wutsi-chat-sdk-kotlin</artifactId>
   <groupId>com.wutsi.platform.chat</groupId>
   <version>0.0.1-SNAPSHOT</version>
   <packaging>jar</packaging>
 
-  <name>wutsi-vhat-sdk-kotlin</name>
+  <name>wutsi-chat-sdk-kotlin</name>
 
   <properties>
     <jdk.version>11</jdk.version>
@@ -55,14 +55,14 @@
   </dependencies>
 
   <scm>
-    <developerConnection>scm:git:https://github.com/wutsi/wutsi-vhat-sdk-kotlin.git</developerConnection>
+    <developerConnection>scm:git:https://github.com/wutsi/wutsi-chat-sdk-kotlin.git</developerConnection>
     <tag>HEAD</tag>
   </scm>
   <distributionManagement>
     <repository>
       <id>github</id>
       <name>GitHub Maven Packages</name>
-      <url>https://maven.pkg.github.com/wutsi/wutsi-vhat-sdk-kotlin</url>
+      <url>https://maven.pkg.github.com/wutsi/wutsi-chat-sdk-kotlin</url>
     </repository>
   </distributionManagement>
 

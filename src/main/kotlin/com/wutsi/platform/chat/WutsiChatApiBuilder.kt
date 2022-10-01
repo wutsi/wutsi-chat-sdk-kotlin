@@ -8,7 +8,7 @@ import kotlin.Int
 import kotlin.Long
 import kotlin.collections.List
 
-public class WutsiVhatApiBuilder {
+public class WutsichatApiBuilder {
   public fun build(
     env: Environment,
     mapper: ObjectMapper,
@@ -24,7 +24,7 @@ public class WutsiVhatApiBuilder {
     .client(feign.okhttp.OkHttpClient())
     .encoder(feign.jackson.JacksonEncoder(mapper))
     .decoder(feign.jackson.JacksonDecoder(mapper))
-    .logger(feign.slf4j.Slf4jLogger(WutsiVhatApi::class.java))
+    .logger(feign.slf4j.Slf4jLogger(WutsichatApi::class.java))
     .logLevel(feign.Logger.Level.BASIC)
     .requestInterceptors(interceptors)
     .errorDecoder(errorDecoder)
@@ -32,5 +32,5 @@ public class WutsiVhatApiBuilder {
       java.util.concurrent.TimeUnit.SECONDS.toMillis(retryMaxPeriodSeconds), retryMaxAttempts))
     .options(feign.Request.Options(connectTimeoutMillis, java.util.concurrent.TimeUnit.MILLISECONDS,
       readTimeoutMillis, java.util.concurrent.TimeUnit.MILLISECONDS, followRedirects))
-    .target(WutsiVhatApi::class.java, env.url)
+    .target(WutsichatApi::class.java, env.url)
 }
