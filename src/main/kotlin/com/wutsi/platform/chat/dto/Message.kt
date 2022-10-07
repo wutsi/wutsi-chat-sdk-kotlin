@@ -14,4 +14,5 @@ public data class Message(
   public val timestamp: Long = 0,
   public val created: OffsetDateTime = OffsetDateTime.now(),
   public val deviceId: String? = null,
+  public val received: OffsetDateTime? = null,
 )
